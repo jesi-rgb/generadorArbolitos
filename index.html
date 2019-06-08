@@ -5,7 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>trees</title>
+	<title>Generador de arbolitos</title>
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
 	<script src="libraries/p5.js"></script>
 	<script src="libraries/p5.dom.js"></script>
@@ -16,9 +19,7 @@
 
 	<style>
 		body {
-			margin:0;
-			padding:0;
-			overflow: hidden;
+			overflow: auto;
 		}
 		canvas {
 			margin:auto;
@@ -26,5 +27,44 @@
 	</style>
 </head>
 <body>
+
+<div class="container">
+	<h1 class="display-6 text-left mt-4 ml-4">Generador de arbolitos aleatorio</h1>
+
+	<div class="row">
+		<div class="col-6">
+			<p class="lead text-justify ml-4" width=auto>Puedes generar un arbolito pulsando el botón "Generar árbol aleatorio", o puedes introducir tu nombre y generar un árbol único y exclusivo para ti, o quien tú quieras.</p>
+			<p class="lead text-justify ml-4">Te invito a que generes tus arbolitos y los compartas por tus redes sociales.</p>
+		</div>
+		<div class="col-6 mt-5">
+			<div class="col-6">
+				<div class="row">
+					<button
+						type="button" class="btn btn-secondary btn-sm col-4" name="download" value="Descargar imagen" onclick="makeTreeSeed()">
+						Generar
+					</button>
+					<div id=nameInputDiv class="col-8"></div>
+				</div>
+			</div>
+			<br>
+			<button
+				type="button" class="btn btn-secondary btn-sm" name="download" value="Descargar imagen" onclick="makeTree()">
+				Generar aleatorio
+			</button>
+			<button
+				type="button" class="btn btn-secondary btn-sm" name="download" value="Descargar imagen" onclick="download()">
+				Descargar
+			</button>
+
+		</div>
+	</div>
+
+	<div id="sketchDiv" class="ml-4" width=auto height=auto align=left></div>
+
+	<footer class="footer mb-5 ml-4">
+			<span class="text-muted">Página creada por Jesús Enrique Rascón</span><br>
+			<span class="text-muted">Instagram: <a href="https://instagram.com/jrascon_">jrascon_</span>
+    </footer>
+</div>
 </body>
 </html>
