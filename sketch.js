@@ -30,6 +30,7 @@ var cnv;
 
 function setup() {
   cnv = createCanvas(800, 800, P2D);
+  resizeCanvas(700, 700);
   cnv.id("myCanvas");
   cnv.parent('sketchDiv');
   colorMode(HSB);
@@ -157,6 +158,8 @@ function makeTree(){
   textSize(15);
   textFont("Avenir");
   text("by jrascon_", width - jrSize.width - 30, height - jrSize.height + 6);
+
+
 }
 
 function generate() {
@@ -243,19 +246,3 @@ function drawPhylo(n){
 function download(){
   save("flower_"+int(overallHue)+"_"+seedStr);
 }
-
-// function draw() {
-
-
-
-
-
-  // if(nameInput.value() != ""){
-
-  // }
-
-
-  // noLoop();
-
-
-// }
