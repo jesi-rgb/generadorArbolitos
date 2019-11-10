@@ -9,3 +9,5 @@ La idea es generar arbolitos de forma aleatoria, o bien mediante una semilla, qu
 - También se generan aleatoriamente los colores a utilizar, el ángulo de generación de la _Phyllotaxis_, el tamaño de los frutos, de las ramas del árbol... prácticamente todo.
 
 Ha sido un proyecto modesto pero divertido, para aprender un poco más de javascript y algoritmia general.
+
+Este es el producto final: <a href="http://floresdejesi.byethost18.com/?i=2"> Generador de arbolitos </a>
